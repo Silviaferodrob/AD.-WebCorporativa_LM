@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Gestocaza</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <div id="contenedor">
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="img/gestocaza-logo.png" alt="logo"></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="submenu">
+            <a href="servicios.html">Servicios</a>
+            <ul class="submenu-lista">
+              <li><a href="contacto.html">Licencias</a></li>
+              <li><a href="contacto.html">Seguros</a></li>
+              <li><a href="contacto.html">Asesoramiento</a></li>
+            </ul>
+          </li>
+          <li><a href="quienes_somos.html">Quienes somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contacto">
+        <h3>Contacto</h3>
+        <p class="info-contacto">
+          Puedes escribirnos a <strong>info@gestoriacaza.com</strong> o llamarnos al <strong>+34 654 123 456</strong>.
+        </p>
+      
+        <form class="formulario-contacto">
+          <div class="campo">
+            <label for="nombre">Nombre y Apellidos</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+      
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+      
+          <div class="campo">
+            <label for="telefono">Número de teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+          </div>
+      
+          <div class="campo">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" required>
+          </div>
+      
+          <div class="campo">
+            <label for="comunidad">Comunidad Autónoma</label>
+            <select id="comunidad" name="comunidad" required>
+              <option value="">-- Selecciona tu comunidad --</option>
+              <option value="andalucia">Andalucía</option>
+              <option value="aragon">Aragón</option>
+              <option value="asturias">Asturias</option>
+              <option value="baleares">Baleares</option>
+              <option value="canarias">Canarias</option>
+              <option value="cantabria">Cantabria</option>
+              <option value="castilla-la-mancha">Castilla-La Mancha</option>
+              <option value="castilla-leon">Castilla y León</option>
+              <option value="cataluna">Cataluña</option>
+              <option value="extremadura">Extremadura</option>
+              <option value="galicia">Galicia</option>
+              <option value="madrid">Madrid</option>
+              <option value="murcia">Murcia</option>
+              <option value="navarra">Navarra</option>
+              <option value="rioja">La Rioja</option>
+              <option value="valencia">Comunidad Valenciana</option>
+              <option value="pais-vasco">País Vasco</option>
+              <option value="ceuta">Ceuta</option>
+              <option value="melilla">Melilla</option>
+            </select>
+          </div>
+      
+          <div class="campo">
+            <label>Servicios solicitados</label>
+            <div class="opciones-servicio">
+              <label class="checkbox">
+                <input type="checkbox" name="servicios" value="licencias"> Tramitación de licencias
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="servicios" value="seguros"> Gestión de seguros
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="servicios" value="asesoria"> Asesoría legal
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="servicios" value="documentacion"> Documentación administrativa
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="servicios" value="otros"> Otros
+              </label>
+            </div>
+          </div>
+      
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+      
+          <div class="boton-enviar">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+      
+  </div>
+
+  <footer>
+    <p>© 2025 Gestoría Cinegética | info@gestoriacaza.com | Web diseñada por silviaferodrob</p>
+  </footer>
+</body>
+</html>
